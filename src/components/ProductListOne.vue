@@ -6,6 +6,7 @@
                 <span class="name">{{ product.name }}</span>
                 <span class="price">${{ product.price }}</span>
             </li>
+            
         </ul>
     </div>
 </template>
