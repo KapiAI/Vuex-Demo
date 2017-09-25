@@ -12,7 +12,18 @@ const store = new Vuex.Store({
       {name: '耳机', price: 60},
       {name: '显示屏', price: 80}
     ]
-  }
+  },
+  getters:{
+    saleProducts: (state) => {
+      let saleProducts = state.products.map( product => {
+        return {
+          name: product.name,
+          price: product.price / 2
+        }
+      })
+      return saleProducts;
+    }
+  } 
 })
 
 new Vue({

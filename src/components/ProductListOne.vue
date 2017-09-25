@@ -14,7 +14,7 @@
 export default {
     data () {
         return {
-            products : this.$store.state.products
+            products : this.$store.getters.saleProducts
         }
     }
 }
