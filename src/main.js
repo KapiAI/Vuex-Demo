@@ -30,6 +30,13 @@ const store = new Vuex.Store({
         product.price -= payload
       })
     }
+  },
+  actions:{
+    minusPriceAsync( context, payload ) {
+      setTimeout( () => {
+        context.commit( 'minusPrice', payload );
+      }, 2000)
+    }
   }
 })
 

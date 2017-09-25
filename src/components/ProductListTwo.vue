@@ -7,6 +7,7 @@
                 <span class="price">${{ product.price }}</span>
             </li>
             <button @click="minusPrice">减少价格</button>
+            <button @click="minusPriceAsync">异步减少价格</button>
         </ul>
     </div>
 </template>
@@ -21,6 +22,9 @@ export default {
     methods: {
         minusPrice() {
             this.$store.commit('minusPrice', 2);
+        },
+        minusPriceAsync() {
+            this.$store.dispatch('minusPriceAsync', 5);
         }
     }
 }
