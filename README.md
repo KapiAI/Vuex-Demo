@@ -361,6 +361,7 @@ export default {
 }
 ```
 
+
 - 添加按钮, 可以发现, Product List Two中的价格减少了2, 当然你可以自定义`payload`,以此自定义减少对应的价格.
 ![mutations效果][6]
 (Product List One中的价格没有发生变化, 是因为`getters`将价格进行了缓存)
